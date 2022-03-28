@@ -1,0 +1,29 @@
+\documentclass{article}
+
+\usepackage[margin={1cm,1cm}]{geometry}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{blindtext}
+\usepackage{subfiles} % Best loaded last in the preamble
+
+\setlength{\columnsep}{1cm}
+
+\title{The Curse of Valboro Island}
+\author{David Leblanc}
+\date{ }
+
+\begin{document}
+	
+	\maketitle
+	
+	\section{Introduction}
+	
+	\subfile{sections/introduction}
+	
+	\section{Travel to Valboro}
+	
+	\subfile{sections/part1}
+	
+\end{document}
