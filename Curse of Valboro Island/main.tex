@@ -10,6 +10,15 @@
 
 \setlength{\columnsep}{1cm}
 
+\usepackage{fullpage, tikz}
+\usepackage{eso-pic}
+\AddToShipoutPictureBG{%
+	\begin{tikzpicture}[remember picture, overlay]
+		\node[opacity=.2, inner sep=0pt]
+		at(current page.center){\includegraphics[]{images/background}};
+	\end{tikzpicture}%
+}
+
 \title{The Curse of Valboro Island}
 \author{David Leblanc}
 \date{ }
