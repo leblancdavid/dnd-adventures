@@ -13,21 +13,30 @@
 \usepackage{eso-pic}
 \AddToShipoutPictureBG{%
 	\begin{tikzpicture}[remember picture, overlay]
-		\node[opacity=.2, inner sep=0pt]
-		at(current page.center){\includegraphics[width=9in, height=11.5in]{images/background}};
+		\node[opacity=.4, inner sep=0pt]
+		at(current page.center){\includegraphics[width=8.5in, height=11in]{images/background}};
 	\end{tikzpicture}%
 }
 
 \usepackage[margin={1.5cm,1.5cm}]{geometry}
 
+\newcommand\BackgroundPic{%
+	\put(0,0){%
+		\parbox[b][\paperheight]{\paperwidth}{%
+			\vfill
+			\centering
+			\includegraphics[width=\paperwidth,height=\paperheight]{images/cover.jpg}%
+			\vfill
+}}}
+
 \title{The Curse of Valboro Island}
-\author{David Leblanc}
 \date{ }
 
 
 \begin{document}
-	
+	\AddToShipoutPicture*{\BackgroundPic}
 	\maketitle
+	\pagebreak
 	\subfile{sections/introduction}
 	\subfile{sections/part1}
 	\subfile{sections/monsters}
