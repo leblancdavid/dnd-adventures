@@ -6,6 +6,7 @@
 \graphicspath{{images/}}
 \usepackage{blindtext}
 \usepackage{subfiles} % Best loaded last in the preamble
+\usepackage[dvipsnames]{xcolor}
 
 \setlength{\columnsep}{1cm}
 
@@ -29,9 +30,11 @@
 			\vfill
 }}}
 
-\title{The Curse of Valboro Island}
+\title{\color{white}\textsc{\Huge The Curse of Valboro Island}}
 \date{ }
 
+
+\setlength\fboxsep{8pt}
 
 \begin{document}
 	\AddToShipoutPicture*{\BackgroundPic}
@@ -39,6 +42,7 @@
 	\pagebreak
 	\subfile{sections/introduction}
 	\subfile{sections/part1}
+	\subfile{sections/treasures}
 	\subfile{sections/monsters}
 	
 \end{document}
