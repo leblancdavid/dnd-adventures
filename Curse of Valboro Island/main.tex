@@ -1,6 +1,5 @@
 \documentclass{article}
 
-\usepackage[margin={1cm,1.5cm}]{geometry}
 \usepackage{multicol}
 \usepackage{lipsum}
 \usepackage{graphicx}
@@ -15,9 +14,11 @@
 \AddToShipoutPictureBG{%
 	\begin{tikzpicture}[remember picture, overlay]
 		\node[opacity=.2, inner sep=0pt]
-		at(current page.center){\includegraphics[]{images/background}};
+		at(current page.center){\includegraphics[width=9in, height=11.5in]{images/background}};
 	\end{tikzpicture}%
 }
+
+\usepackage[margin={1.5cm,1.5cm}]{geometry}
 
 \title{The Curse of Valboro Island}
 \author{David Leblanc}
