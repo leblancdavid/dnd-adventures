@@ -7,6 +7,9 @@
 \usepackage{blindtext}
 \usepackage{subfiles} % Best loaded last in the preamble
 \usepackage[dvipsnames]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{setspace}
+\usepackage{float}
 
 \setlength{\columnsep}{1cm}
 
@@ -40,8 +43,11 @@
 	\AddToShipoutPicture*{\BackgroundPic}
 	\maketitle
 	\pagebreak
+	\tableofcontents
+	\pagebreak
 	\subfile{sections/introduction}
 	\subfile{sections/part1}
+	\subfile{sections/summary}
 	\subfile{sections/treasures}
 	\subfile{sections/monsters}
 	
