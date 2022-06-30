@@ -1,0 +1,57 @@
+\documentclass{article}
+
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{blindtext}
+\usepackage{subfiles} % Best loaded last in the preamble
+\usepackage[dvipsnames]{xcolor}
+
+\setlength{\columnsep}{1cm}
+
+\usepackage{fullpage, tikz}
+\usepackage{eso-pic}
+
+%\AddToShipoutPictureBG{%
+%	\begin{tikzpicture}[remember picture, overlay]
+%		\node[opacity=.4, inner sep=0pt]
+%		at(current page.center){\includegraphics[width=8.5in, height=11in]{images/background}};
+%	\end{tikzpicture}%
+%}
+
+\usepackage[margin={1.5cm,1.5cm}]{geometry}
+
+\title{\textsc{\Huge Lost Mine of Phandelver (Summary)}}
+\date{ }
+
+
+\setlength\fboxsep{8pt}
+\raggedbottom
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\pagebreak
+	\begin{multicols}{2}
+
+	\subfile{sections/introduction}
+	\vfill
+	\pagebreak
+	\subfile{sections/part1}
+	\vfill
+	\pagebreak
+	\subfile{sections/part2}
+	\vfill
+	\pagebreak
+	\subfile{sections/part3}
+	\vfill
+	\pagebreak
+
+
+	
+	\section{Part 4: Wave Echo Cave}
+	
+	\end{multicols}
+	
+\end{document}
